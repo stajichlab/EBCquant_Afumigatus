@@ -1,0 +1,271 @@
+IQ-TREE 2.2.2.6 COVID-edition built May 27 2023
+
+Input file name: analysis/mito_phylogeny/rrns_full_with_asv.aln
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 52362
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 17 sequences with 1477 nucleotide sites
+Number of constant sites: 1151 (= 77.9282% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 1151 (= 77.9282% of all sites)
+Number of parsimony informative sites: 109
+Number of distinct site patterns: 234
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TVM+F+R2
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+TVM+F+R2          -4022.474    8124.949 +    0.148    8127.233 +    0.159    8336.859 +    0.787
+TVM+F+I+R2        -4020.639    8123.279 +    0.341    8125.679 +    0.346    8340.487 +    0.128
+GTR+F+R2          -4021.167    8124.334 +    0.201    8126.734 +    0.204    8341.542 +   0.0757
+GTR+F+I+R2        -4019.973    8123.947 +    0.244    8126.465 +    0.234    8346.453 -   0.0065
+TPM3u+F+R2        -4035.647    8147.293 - 2.08e-06    8149.354 -  2.5e-06    8348.608 -  0.00221
+TIM3+F+R2         -4034.158    8146.317 - 3.39e-06    8148.488 - 3.86e-06    8352.930 - 0.000255
+TPM3u+F+I+R2      -4034.392    8146.784 - 2.68e-06    8148.955 - 3.05e-06    8353.397 - 0.000202
+GTR+F+R3          -4021.039    8128.078 -    0.031    8130.718 -   0.0279    8355.882 - 5.82e-05
+TIM3+F+I+R2       -4033.601    8147.202 - 2.18e-06    8149.486 - 2.34e-06    8359.113 - 1.16e-05
+GTR+F+I+R3        -4019.933    8127.867 -   0.0344    8130.632 -   0.0291    8360.969 - 4.58e-06
+TPM2u+F+R2        -4041.848    8159.695 - 4.22e-09    8161.756 - 5.07e-09    8361.010 - 4.48e-06
+GTR+F+I+G4        -4031.437    8144.874 - 6.97e-06    8147.274 - 7.08e-06    8362.083 - 2.62e-06
+GTR+F+G4          -4035.532    8151.065 - 3.16e-07    8153.349 - 3.39e-07    8362.975 - 1.68e-06
+TIM2+F+R2         -4040.591    8159.183 - 5.45e-09    8161.354 -  6.2e-09    8365.796 -  4.1e-07
+TPM2u+F+I+R2      -4040.666    8159.333 - 5.06e-09    8161.504 - 5.75e-09    8365.946 -  3.8e-07
+K3Pu+F+R2         -4046.491    8168.982 - 4.06e-11    8171.043 - 4.88e-11    8370.297 - 4.31e-08
+TIM2+F+I+R2       -4040.007    8160.014 -  3.6e-09    8162.298 - 3.87e-09    8371.925 - 1.91e-08
+TIM+F+R2          -4045.088    8168.176 - 6.08e-11    8170.347 - 6.91e-11    8374.789 - 4.57e-09
+K3Pu+F+I+R2       -4045.664    8169.328 - 3.41e-11    8171.500 - 3.88e-11    8375.941 - 2.57e-09
+HKY+F+R2          -4053.566    8181.132 - 9.34e-14    8183.086 - 1.18e-13    8377.149 -  1.4e-09
+GTR+F+I           -4042.804    8165.608 - 2.19e-10    8167.892 - 2.36e-10    8377.519 - 1.17e-09
+TN+F+R2           -4052.129    8180.258 - 1.45e-13    8182.319 - 1.74e-13    8381.573 - 1.54e-10
+TIM+F+I+R2        -4044.852    8169.704 - 2.83e-11    8171.988 - 3.04e-11    8381.615 -  1.5e-10
+HKY+F+I+R2        -4053.167    8182.335 - 5.12e-14    8184.396 - 6.15e-14    8383.650 - 5.44e-11
+TN+F+I+R2         -4052.311    8182.622 - 4.43e-14    8184.793 - 5.04e-14    8389.235 - 3.33e-12
+F81+F+R2          -4080.919    8233.839 - 3.35e-25    8235.689 - 4.48e-25    8424.559 - 7.12e-20
+F81+F+I+R2        -4079.408    8232.816 - 5.59e-25    8234.771 - 7.08e-25    8428.834 - 8.39e-21
+TVMe+R2           -4103.520    8281.040 - 1.89e-35    8282.994 - 2.39e-35    8477.057 - 2.83e-31
+TVMe+I+R2         -4100.004    8276.007 - 2.34e-34    8278.068 - 2.81e-34    8477.322 - 2.48e-31
+SYM+I+R2          -4099.496    8276.992 - 1.43e-34    8279.163 - 1.62e-34    8483.605 - 1.07e-32
+SYM+R2            -4103.383    8282.766 - 7.96e-36    8284.827 - 9.56e-36    8484.081 - 8.46e-33
+GTR+F             -4110.733    8299.466 - 1.88e-39    8301.637 - 2.14e-39    8506.079 - 1.41e-37
+TPM3+R2           -4129.019    8328.038 - 1.18e-45    8329.786 - 1.65e-45    8513.459 - 3.53e-39
+TPM3+I+R2         -4127.216    8326.432 - 2.62e-45    8328.282 -  3.5e-45    8517.152 - 5.57e-40
+TIM3e+R2          -4129.004    8330.009 - 4.39e-46    8331.859 - 5.86e-46    8520.728 - 9.32e-41
+TIM3e+I+R2        -4127.078    8328.156 - 1.11e-45    8330.110 -  1.4e-45    8524.174 - 1.66e-41
+TPM2+R2           -4147.205    8364.410 - 1.49e-53    8366.159 - 2.09e-53    8549.832 - 4.46e-47
+TPM2+I+R2         -4143.977    8359.954 - 1.38e-52    8361.804 - 1.84e-52    8550.674 - 2.93e-47
+TIM2e+I+R2        -4143.110    8360.219 - 1.21e-52    8362.173 - 1.53e-52    8556.237 - 1.81e-48
+TIM2e+R2          -4146.813    8365.625 - 8.09e-54    8367.475 - 1.08e-53    8556.345 - 1.72e-48
+K3P+R2            -4157.101    8384.202 - 7.48e-58    8385.950 - 1.05e-57    8569.624 - 2.25e-51
+K3P+I+R2          -4155.991    8383.982 - 8.35e-58    8385.832 - 1.12e-57    8574.702 - 1.77e-52
+TIMe+R2           -4156.935    8385.871 - 3.25e-58    8387.721 - 4.34e-58    8576.590 -  6.9e-53
+TIMe+I+R2         -4155.531    8385.061 - 4.87e-58    8387.015 - 6.18e-58    8581.079 - 7.32e-54
+K2P+R2            -4170.100    8408.199 -  4.6e-63    8409.850 -  6.8e-63    8588.323 - 1.96e-55
+K2P+I+R2          -4169.390    8408.780 - 3.44e-63    8410.529 - 4.84e-63    8594.202 - 1.03e-56
+TNe+R2            -4169.917    8409.834 - 2.03e-63    8411.583 - 2.86e-63    8595.256 - 6.11e-57
+TNe+I+R2          -4168.896    8409.793 - 2.08e-63    8411.643 - 2.77e-63    8600.513 - 4.41e-58
+JC+R2             -4192.041    8450.083 -  3.7e-72    8451.638 - 5.73e-72    8624.909 - 2.22e-63
+JC+I+R2           -4190.147    8448.295 - 9.05e-72    8449.945 - 1.34e-71    8628.419 - 3.84e-64
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TVM+F+R2
+
+Rate parameter R:
+
+  A-C: 0.7611
+  A-G: 3.2825
+  A-T: 2.5756
+  C-G: 0.0496
+  C-T: 3.2825
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.3403
+  pi(C) = 0.1502
+  pi(G) = 0.2138
+  pi(T) = 0.2957
+
+Rate matrix Q:
+
+  A    -1.055   0.07647    0.4693    0.5094
+  C    0.1732   -0.8296  0.007098    0.6493
+  G    0.7472  0.004988     -0.95    0.1978
+  T    0.5863    0.3298     0.143    -1.059
+
+Model of rate heterogeneity: FreeRate with 2 categories
+Site proportion and rates:  (0.9113,0.314) (0.08867,8.05)
+
+ Category  Relative_rate  Proportion
+  1         0.314          0.9113
+  2         8.05           0.08867
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -4020.5707 (s.e. 97.1227)
+Unconstrained log-likelihood (without tree): -5572.7892
+Number of free parameters (#branches + #model parameters): 40
+Akaike information criterion (AIC) score: 8121.1415
+Corrected Akaike information criterion (AICc) score: 8123.4256
+Bayesian information criterion (BIC) score: 8333.0522
+
+Total tree length (sum of branch lengths): 1.3307
+Sum of internal branch lengths: 0.0925 (6.9499% of tree length)
+
+WARNING: 1 near-zero internal branches (<0.0007) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Neurospora_crassa_OR74A' is drawn at root
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
+               +**CF_sputum_ASV91
+            +--| (85.4/90)
+            |  |  +**Aspergillus_fumigatus_A1163
+            |  +**| (0/62)
+            |     +**Aspergillus_fumigatus_Af293
+         +--| (96.7/95)
+         |  |  +--Aspergillus_fischeri
+         |  +--| (43.9/67)
+         |     |  +--Aspergillus_lentulus_IFM54703
+         |     +--| (78.3/86)
+         |        |  +--Aspergillus_pseudoviridinutans_IFM55266
+         |        +--| (24.1/57)
+         |           +**Aspergillus_udagawae_IFM46973
+      +--| (14.8/44)
+      |  |  +--Aspergillus_clavatus_NRRL1
+      |  +--| (84/61)
+      |     |                                                       +**Fusarium_graminearum_PH-1
+      |     |    +--------------------------------------------------| (100/100)
+      |     |    |                                                  +**Fusarium_oxysporum
+      |     +----| (91.9/82)
+      |          +---Talaromyces_marneffei_PM1
+   +--| (84.3/78)
+   |  +-------Aspergillus_nidulans_FGSC_A4
++--| (90.8/93)
+|  |     +**Aspergillus_flavus_CA14
+|  |  +--| (90.7/96)
+|  |  |  +**Aspergillus_oryzae_RIB40
+|  +--| (16/45)
+|     +-------Aspergillus_niger_CBS513.88
+|
++**Aspergillus_terreus
+|
++--------------------------------------------------------Neurospora_crassa_OR74A
+
+Tree in newick format:
+
+((((((CF_sputum_ASV91:0.0000028960,(Aspergillus_fumigatus_A1163:0.0000010165,Aspergillus_fumigatus_Af293:0.0000010165)0/62:0.0000024902)85.4/90:0.0028159336,(Aspergillus_fischeri:0.0009242666,(Aspergillus_lentulus_IFM54703:0.0021359798,(Aspergillus_pseudoviridinutans_IFM55266:0.0033934571,Aspergillus_udagawae_IFM46973:0.0000023599)24.1/57:0.0008391173)78.3/86:0.0012113729)43.9/67:0.0017169890)96.7/95:0.0067040025,(Aspergillus_clavatus_NRRL1:0.0029895260,((Fusarium_graminearum_PH-1:0.0000010165,Fusarium_oxysporum:0.0000010165)100/100:0.4815423206,Talaromyces_marneffei_PM1:0.0460833090)91.9/82:0.0545397895)84/61:0.0053537777)14.8/44:0.0026433648,Aspergillus_nidulans_FGSC_A4:0.0753121818)84.3/78:0.0046301035,((Aspergillus_flavus_CA14:0.0000010165,Aspergillus_oryzae_RIB40:0.0000010165)90.7/96:0.0058183687,Aspergillus_niger_CBS513.88:0.0758177333)16/45:0.0028278394)90.8/93:0.0120163244,Aspergillus_terreus:0.0000021041,Neurospora_crassa_OR74A:0.5413805752);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -4020.578605
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
+               +--CF_sputum_ASV91
+            +--| (90)
+            |  |  +--Aspergillus_fumigatus_A1163
+            |  +--| (62)
+            |     +--Aspergillus_fumigatus_Af293
+         +--| (95)
+         |  |  +--Aspergillus_fischeri
+         |  +--| (67)
+         |     |  +--Aspergillus_lentulus_IFM54703
+         |     +--| (86)
+         |        |  +--Aspergillus_pseudoviridinutans_IFM55266
+         |        +--| (57)
+         |           +--Aspergillus_udagawae_IFM46973
+      +--|
+      |  |  +--Aspergillus_clavatus_NRRL1
+      |  +--| (61)
+      |     |                                                       +--Fusarium_graminearum_PH-1
+      |     |    +--------------------------------------------------| (100)
+      |     |    |                                                  +--Fusarium_oxysporum
+      |     +----| (82)
+      |          +----Talaromyces_marneffei_PM1
+   +--| (44)
+   |  +-------Aspergillus_nidulans_FGSC_A4
++--| (78)
+|  |     +--Aspergillus_flavus_CA14
+|  |  +--| (96)
+|  |  |  +--Aspergillus_oryzae_RIB40
+|  +--| (45)
+|     +-------Aspergillus_niger_CBS513.88
+| (93)
++--Aspergillus_terreus
+|
++---------------------------------------------------------Neurospora_crassa_OR74A
+
+
+Consensus tree in newick format: 
+
+((((((CF_sputum_ASV91:0.0000023216,(Aspergillus_fumigatus_A1163:0.0000023216,Aspergillus_fumigatus_Af293:0.0000023216)62:0.0000024366)90:0.0028190060,(Aspergillus_fischeri:0.0009254379,(Aspergillus_lentulus_IFM54703:0.0021377425,(Aspergillus_pseudoviridinutans_IFM55266:0.0033971449,Aspergillus_udagawae_IFM46973:0.0000023216)57:0.0008395191)86:0.0012120649)67:0.0017179572)95:0.0067074146,(Aspergillus_clavatus_NRRL1:0.0029935884,((Fusarium_graminearum_PH-1:0.0000023216,Fusarium_oxysporum:0.0000023216)100:0.4817064927,Talaromyces_marneffei_PM1:0.0473101657)82:0.0531669985)61:0.0053588664):0.0026346606,Aspergillus_nidulans_FGSC_A4:0.0753310198)44:0.0046342666,((Aspergillus_flavus_CA14:0.0000023216,Aspergillus_oryzae_RIB40:0.0000023216)96:0.0058138111,Aspergillus_niger_CBS513.88:0.0757953642)45:0.0028220955)78:0.0120174637,Aspergillus_terreus:0.0000025672,Neurospora_crassa_OR74A:0.5413772299)93;
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t analysis/mito_phylogeny/tree_full_with_asv.treefile -m "TVM{0.761062,3.2825,2.57557,0.0496413}+F{0.340319,0.150216,0.213753,0.295712}+R2{0.911331,0.314037,0.0886688,8.05027}" --length 1477
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s analysis/mito_phylogeny/rrns_full_with_asv.aln --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s analysis/mito_phylogeny/rrns_full_with_asv.aln --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sun Nov 22 12:08:06 2026
+Total CPU time used: 14.689995 seconds (0h:0m:14s)
+Total wall-clock time used: 5.189481974 seconds (0h:0m:5s)
+

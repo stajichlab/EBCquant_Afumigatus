@@ -1,0 +1,29 @@
+# Ignore large raw data files and archives
+data/
+fastq
+*.zip
+*.tar
+*.tar.gz
+*.sra
+*.log
+missing_accessions.txt
+
+# Ignore separate git repository
+EBC-KT/
+
+# Ignore genome sequences and BLAST databases
+analysis/mito_phylogeny/fasta_genomes/
+analysis/mito_phylogeny/gb_records/
+analysis/mito_phylogeny/all_genomes*
+analysis/mito_phylogeny/*.fa
+analysis/mito_phylogeny/*.fasta
+analysis/mito_phylogeny/*.gb
+analysis/ftmA.fasta
+metadata/*.fasta
+metadata/*.n*
+metadata/asvs_128936.fasta
+
+# Python artifacts
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
