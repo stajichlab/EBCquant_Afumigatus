@@ -79,8 +79,12 @@ Across the 671 samples in table 54502, three distinct ecological zones emerge al
 ---
 
 ## 4. Output Figures & Tables
-- `analysis/community_dynamics/depth_triangulation_plot.pdf` (Multi-panel figure: depth profiles, patient curves, correlation scatter)
-- `analysis/community_dynamics/depth_triangulation_plot.png` (High-res preview)
-- `analysis/community_dynamics/microbiome_metabolome_merged_depth.csv` (Merged 45-sample data)
-- `analysis/community_dynamics/depth_stratification_summary.csv` (Treatment $\times$ depth summary)
-- `analysis/community_dynamics/study_10863_community_profiles.csv` (All 671 sample taxonomic profiles)
+- **Depth Triangulation & Dynamics Plot:** [Download PDF](depth_triangulation_plot.pdf) | [View PNG](depth_triangulation_plot.png)
+
+![Depth Triangulation and Bacterial Community Dynamics](depth_triangulation_plot.png)
+
+### Data Tables
+- `microbiome_metabolome_merged_depth.csv` (Merged 45-sample LC-MS and 16S data)
+- `depth_stratification_summary.csv` (Treatment $\times$ depth summary)
+- `study_10863_community_profiles.csv` (All 671 sample taxonomic profiles)
+- `tobramycin_bacterial_dynamics_detailed.csv` (190 depth points across all 19 patients)

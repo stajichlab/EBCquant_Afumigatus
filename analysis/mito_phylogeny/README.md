@@ -66,7 +66,9 @@ Key diagnostic positions across the 150 bp alignment:
 - **Tree files:**
   - `tree_v4_150bp.treefile` (Newick ML tree)
   - `tree_v4_150bp.contree` (Consensus tree with bootstrap supports)
-  - `mito_v4_150bp_phylogeny.pdf` / `mito_v4_150bp_phylogeny.png` (Visual figure)
+  - Figure Links: [PDF](mito_v4_150bp_phylogeny.pdf) | [PNG](mito_v4_150bp_phylogeny.png)
+
+![150 bp V4 Mitochondrial rRNA Phylogeny](mito_v4_150bp_phylogeny.png)
 
 ### 2. Full-length *rrnS* (~1,450 bp) Backbone Tree with ASV 91
 - **Alignment:** 17 sequences, 1,477 aligned positions.
@@ -80,7 +82,9 @@ Key diagnostic positions across the 150 bp alignment:
 - **Tree files:**
   - `tree_full_with_asv.treefile` (Newick ML tree)
   - `tree_full_with_asv.contree` (Consensus tree with bootstrap supports)
-  - `mito_rrns_phylogeny.pdf` / `mito_rrns_phylogeny.png` (Visual figure)
+  - Figure Links: [PDF](mito_rrns_phylogeny.pdf) | [PNG](mito_rrns_phylogeny.png)
+
+![Full-Length Mitochondrial rrnS Phylogeny](mito_rrns_phylogeny.png)
 
 ---
 

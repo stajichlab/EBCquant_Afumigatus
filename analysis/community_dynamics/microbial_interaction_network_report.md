@@ -41,6 +41,9 @@ The fermentative anaerobes form a tightly interconnected mutualistic module:
 ---
 
 ## 3. Network Architecture & Deliverables
-- `analysis/community_dynamics/microbial_interaction_network.pdf` (Publication-ready network figure)
-- `analysis/community_dynamics/microbial_interaction_network.png` (High-resolution preview)
-- `analysis/community_dynamics/microbial_correlation_edges.csv` (Complete edge list with raw and FDR-adjusted $p$-values)
+- **Network Graph:** [Download PDF](microbial_interaction_network.pdf) | [View PNG](microbial_interaction_network.png)
+
+![Microbial Interaction and Niche Exclusion Network](microbial_interaction_network.png)
+
+### Data Tables
+- `microbial_correlation_edges.csv` (Complete edge list with raw and FDR-adjusted $p$-values)

@@ -33,6 +33,9 @@ Pairwise Bray-Curtis dissimilarity was calculated between condition-averaged gen
 ---
 
 ## 4. Figures & Output Files
-- `analysis/cross_study_convergence/chemical_convergence_ordination.pdf` (PCoA ordination & Ward hierarchical clustering dendrogram)
-- `analysis/cross_study_convergence/chemical_convergence_ordination.png` (High-res preview)
-- `analysis/cross_study_convergence/bray_curtis_condition_distances.csv` (Full condition distance matrix)
+- **Chemical Convergence Ordination & Dendrogram:** [Download PDF](chemical_convergence_ordination.pdf) | [View PNG](chemical_convergence_ordination.png)
+
+![Chemical Convergence Ordination and Dendrogram](chemical_convergence_ordination.png)
+
+### Data Tables
+- `bray_curtis_condition_distances.csv` (Full condition distance matrix)

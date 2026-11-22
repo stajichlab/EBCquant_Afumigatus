@@ -91,21 +91,38 @@ CF_aspergillus_MSV000081456/
 - IQ-TREE maximum-likelihood reconstruction places the sputum sequence in an unambiguous terminal polytomy with *A. fumigatus* (90% bootstrap support on full backbone; 95% support for section *Fumigati* monophyly).
 - Closed-reference Greengenes OTU 3229180 (previously labeled `Raphanus sativus` / radish mitochondrion) was confirmed via BLASTN to represent dietary Brassicaceae plant material, not fungal biomass.
 
+**Mitochondrial SSU Phylogeny:** [Download PDF](analysis/mito_phylogeny/mito_rrns_phylogeny.pdf) | [View PNG](analysis/mito_phylogeny/mito_rrns_phylogeny.png)  
+![Mitochondrial rrnS Phylogeny](analysis/mito_phylogeny/mito_rrns_phylogeny.png)
+
 ### 3. Microbiome–Metabolome Triangulation (MSV000081456 vs 16S)
 - Merging quantitative LC-MS/MS peak areas of fumitremorgin C ($m/z\ 380.1972$) with 16S *Aspergillus* mitochondrial reads across depths (1–5 mm) demonstrated strong, statistically significant concordance:
   - **Cohort-wide (n = 45 depth points):** Spearman $\rho = 0.8134$ ($p = 1.12 \times 10^{-11}$), Pearson $r = 0.5002$ ($p = 4.68 \times 10^{-4}$).
   - **Within positive patients (146, 157, 353; n = 15):** Spearman $\rho = 0.5514$ ($p = 0.0331$).
 - In patient 157, *Aspergillus* 16S abundance peaks at 1 mm ($96.3\%$) and decays down to 5 mm ($6.4\%$), tracking fumitremorgin C MS1 peak area ($6.45 \times 10^6 \to 1.39 \times 10^7 \to 2.84 \times 10^6$). Negative patients have zero 16S reads and zero MS1 area.
 
+**Depth Triangulation & Dynamics Plot:** [Download PDF](analysis/community_dynamics/depth_triangulation_plot.pdf) | [View PNG](analysis/community_dynamics/depth_triangulation_plot.png)  
+![Depth Triangulation and Community Dynamics](analysis/community_dynamics/depth_triangulation_plot.png)
+
 ### 4. Resolution of Patient 272 (Untreated Fungal Colonizer)
 - In the EBC metabolomics analysis, Patient 272 carried the full *Aspergillus* metabolite suite in **untreated** tubes, but not in tobramycin tubes.
 - Our 16S profiling directly resolved this: in untreated control replicate `10863.272.1.a`, *Aspergillus* bloomed to **34.70%** (18,299 reads), but was suppressed under tobramycin (0.33%). Patient 272 represents an untreated aerobic colonizer where *Aspergillus* successfully established without antibiotic disruption.
 
-### 5. Bacterial Niche Collapse & Replacement Dynamics
+### 5. Bacterial Niche Collapse & Interaction Network
 - **Oxic Surface (1–3 mm):** In untreated columns, *Pseudomonas aeruginosa* dominates ($13.5\%$) and suppresses *Aspergillus* ($<0.01\%$). Under tobramycin, *P. aeruginosa* collapses, enabling *Aspergillus* to bloom to an average of $14.0\%$ (reaching up to $96\%$ in positive patients) and resistant *Stenotrophomonas maltophilia* to expand.
 - **Deep Anoxic Sanctuary ($\ge 7$ mm):** Tobramycin fails to penetrate deep mucus. Obligate and facultative fermenters thrive unhindered (*Streptococcus* reaches $24.2\%$, *Prevotella* $21.8\%$, *Veillonella* $2.3\%$), while *Aspergillus* drops to $<0.01\%$.
+- **Interaction Network:** Pervasive competitive exclusion between aerobic pathogens and anaerobic fermenters (*Pseudomonas* vs. *Streptococcus* $\rho = -0.500$, $p = 2.4 \times 10^{-35}$).
 
-### 6. Cross-Agent Collaboration & Method Evaluations
+**Microbial Interaction Network:** [Download PDF](analysis/community_dynamics/microbial_interaction_network.pdf) | [View PNG](analysis/community_dynamics/microbial_interaction_network.png)  
+![Microbial Interaction Network](analysis/community_dynamics/microbial_interaction_network.png)
+
+### 6. Cross-Study Chemical Convergence (Hypoxia Phenocopying Acidic pH)
+- Comparing deep anoxia (7–10 mm) from study 10863 against the 8 buffered pH steps of study 10511 reveals a strictly monotonic increase in Bray-Curtis dissimilarity: minimum against **pH 5.0 (0.229)** and maximum against **pH 8.5 (0.397)**.
+- Deep mucus hypoxia naturally accumulates fermentation acids (propionic and lactic acids), phenocopying environmental acidification.
+
+**Chemical Convergence Ordination:** [Download PDF](analysis/cross_study_convergence/chemical_convergence_ordination.pdf) | [View PNG](analysis/cross_study_convergence/chemical_convergence_ordination.png)  
+![Chemical Convergence Ordination](analysis/cross_study_convergence/chemical_convergence_ordination.png)
+
+### 7. Cross-Agent Collaboration & Method Evaluations
 - **BFD-HPCC Request 012 Item B:** Proved that **188 of 430 `known` regions (43.7%)** in the antiSMASH table rest on single-protein MIBiG entries (e.g. housekeeping cyclases), while the 17-gene *A. nidulans* sterigmatocystin cluster was misclassified as `weak`. Proposed a revised rule requiring `entry_fraction_hit >= 0.60` and `core_gene_hits >= 1`, while isolating 1-protein entries as `homolog_only`.
 - **BFD-HPCC Request 012 Item A:** Demonstrated that strict single-sentence rules fail on *carG* (PMID 12695851) purely due to grammatical anaphora ("the encoded protein"), and recommended contextual abstract-level reading. Supported accepting curated ORFs/published abbreviations for entries lacking UniProt `GN` fields (e.g. 4HNR, melB).
 - **Enzymatic Propionylation Resistance Hypothesis:** Authored `IDEA_aminoglycoside_propionylation_resistance.md`, outlining how anaerobic fermenters (*Prevotella*, *Veillonella*) produce environmental propionate, generating intracellular propionyl-CoA that promiscuous aminoglycoside acetyltransferases (AACs) use to inactivate inhaled tobramycin via propionylation (+56.026 Da).
