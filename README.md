@@ -44,6 +44,8 @@ CF_aspergillus_MSV000081456/
 │   ├── community_dynamics/                   # Community dynamics & metabolome triangulation
 │   │   ├── README.md                         # Detailed triangulation metrics & patient tables
 │   │   ├── bacterial_replacement_report.md   # Tripartite surface regimes & anaerobic convergence
+│   │   ├── cross_sample_metabolite_sharing_analysis.md # Cohort-wide and corpus sharing report
+│   │   ├── cross_sample_metabolite_sharing.pdf/.png    # Cross-sample sharing heatmap figure
 │   │   ├── microbial_interaction_network_report.md # Network analysis & mutual-exclusion edges
 │   │   ├── microbial_interaction_network.pdf/.png  # Network visualization graph
 │   │   ├── microbial_correlation_edges.csv   # All pairwise Spearman FDR correlations
@@ -70,7 +72,8 @@ CF_aspergillus_MSV000081456/
     │   ├── 2026-11-22-gemini-hpcc-006*       # Tripartite surface regimes & anaerobic convergence
     │   ├── 2026-11-22-gemini-hpcc-007*       # Chemical formulas for unannotated features
     │   ├── 2026-11-22-gemini-hpcc-008*       # Synteny of the 4 clinical A. fumigatus BGCs
-    │   └── 2026-11-22-gemini-hpcc-009*       # Cross-study chemical convergence (anoxia vs pH)
+    │   ├── 2026-11-22-gemini-hpcc-009*       # Cross-study chemical convergence (anoxia vs pH)
+    │   └── 2026-11-22-gemini-hpcc-010*       # Cohort sharing & global corpus specificity
     └── IDEA_aminoglycoside_propionylation_resistance.md # Metabolic cross-talk hypothesis note
 ```
 
@@ -103,11 +106,23 @@ CF_aspergillus_MSV000081456/
 **Depth Triangulation & Dynamics Plot:** [Download PDF](analysis/community_dynamics/depth_triangulation_plot.pdf) | [View PNG](analysis/community_dynamics/depth_triangulation_plot.png)  
 ![Depth Triangulation and Community Dynamics](analysis/community_dynamics/depth_triangulation_plot.png)
 
-### 4. Resolution of Patient 272 (Untreated Fungal Colonizer)
+### 4. Cross-Sample Sharing and Global Specificity of Secondary Metabolites
+- **Within-Cohort Sharing (MSV000080397, 556 runs):**
+  - Under tobramycin, the complete *A. fumigatus* metabolite suite (fumitremorgin C, fumiquinazolines, fumigaclavine C, festuclavine) is detected strictly in patients 157, 353, and 146 (6–10 of 10 runs each) and is **0 / 10** in all other 15 CF patients.
+  - In untreated controls, Patient 272 is the sole positive subject (fumiquinazoline A 8/10, fumigaclavine C 8/10, festuclavine 9/10).
+  - All 4 healthy control subjects (C1–C4, 120 runs) are 100% negative (0/120 runs) for the fungal metabolite suite.
+- **Global MassIVE Corpus (6,114 library groups):**
+  - The co-occurring 4-pathway suite occurs in **zero other human clinical studies** in the public domain.
+  - Outside of this CF cohort, the suite is found exclusively in pure culture fermentations of *A. fumigatus*.
+
+**Cross-Sample Sharing Heatmap:** [Download PDF](analysis/community_dynamics/cross_sample_metabolite_sharing.pdf) | [View PNG](analysis/community_dynamics/cross_sample_metabolite_sharing.png)  
+![Cross-Sample Metabolite Sharing](analysis/community_dynamics/cross_sample_metabolite_sharing.png)
+
+### 5. Resolution of Patient 272 (Untreated Fungal Colonizer)
 - In the EBC metabolomics analysis, Patient 272 carried the full *Aspergillus* metabolite suite in **untreated** tubes, but not in tobramycin tubes.
 - Our 16S profiling directly resolved this: in untreated control replicate `10863.272.1.a`, *Aspergillus* bloomed to **34.70%** (18,299 reads), but was suppressed under tobramycin (0.33%). Patient 272 represents an untreated aerobic colonizer where *Aspergillus* successfully established without antibiotic disruption.
 
-### 5. Bacterial Niche Collapse & Interaction Network
+### 6. Bacterial Niche Collapse & Interaction Network
 - **Oxic Surface (1–3 mm):** In untreated columns, *Pseudomonas aeruginosa* dominates ($13.5\%$) and suppresses *Aspergillus* ($<0.01\%$). Under tobramycin, *P. aeruginosa* collapses, enabling *Aspergillus* to bloom to an average of $14.0\%$ (reaching up to $96\%$ in positive patients) and resistant *Stenotrophomonas maltophilia* to expand.
 - **Deep Anoxic Sanctuary ($\ge 7$ mm):** Tobramycin fails to penetrate deep mucus. Obligate and facultative fermenters thrive unhindered (*Streptococcus* reaches $24.2\%$, *Prevotella* $21.8\%$, *Veillonella* $2.3\%$), while *Aspergillus* drops to $<0.01\%$.
 - **Interaction Network:** Pervasive competitive exclusion between aerobic pathogens and anaerobic fermenters (*Pseudomonas* vs. *Streptococcus* $\rho = -0.500$, $p = 2.4 \times 10^{-35}$).
